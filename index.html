@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Code & Canvas — Portfolio of Suha, a developer and visual artist crafting digital experiences and original artwork." />
+    <meta name="author" content="Suha" />
+    <meta property="og:title" content="Code & Canvas | Suha" />
+    <meta property="og:description" content="Developer. Artist. Storyteller." />
+    <meta property="og:type" content="website" />
+    <title>Code &amp; Canvas | Suha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================================================
+         HEADER / NAVBAR
+    ============================================================ -->
+    <header class="site-header" role="banner">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#hero" class="navbar__logo" aria-label="Code and Canvas — home">
+          <span class="navbar__logo-code">Code</span>
+          <span class="navbar__logo-amp">&amp;</span>
+          <span class="navbar__logo-canvas">Canvas</span>
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button
+          class="navbar__toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+        >
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+
+        <ul class="navbar__menu" id="nav-menu" role="list">
+          <li><a class="navbar__link" href="#about">About</a></li>
+          <li><a class="navbar__link" href="#skills">Skills</a></li>
+          <li><a class="navbar__link" href="#projects">Projects</a></li>
+          <li><a class="navbar__link" href="#gallery">Gallery</a></li>
+          <li><a class="navbar__link" href="#journey">Journey</a></li>
+          <li><a class="navbar__link" href="#stats">Stats</a></li>
+          <li><a class="navbar__link navbar__link--cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main id="main-content">
+
+      <!-- ============================================================
+           HERO SECTION
+      ============================================================ -->
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="hero__bg" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hello, I'm</p>
+          <h1 class="hero__heading" id="hero-heading">Suha</h1>
+          <p class="hero__tagline">
+            I write clean code <span class="hero__divider" aria-hidden="true">·</span>
+            paint with pixels <span class="hero__divider" aria-hidden="true">·</span>
+            photograph the quiet moments
+          </p>
+          <p class="hero__sub">
+            Full-stack developer &amp; visual artist based in Bangladesh —
+            turning ideas into interfaces and canvases into stories.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          </div>
+
+          <div class="hero__scroll-hint" aria-hidden="true">
+            <span class="hero__scroll-label">Scroll</span>
+            <span class="hero__scroll-arrow"></span>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__image-frame">
+            <img
+              src="https://placehold.co/480x560/1a1a2e/e8e4d9?text=Suha"
+              alt="Portrait of Suha"
+              class="hero__portrait"
+              width="480"
+              height="560"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           ABOUT SECTION
+      ============================================================ -->
+      <section class="about section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">About</div>
+
+          <div class="about__grid">
+            <div class="about__image-wrap">
+              <img
+                src="https://placehold.co/500x600/2d2d44/c8b8a2?text=About+Suha"
+                alt="Suha at work in her studio"
+                class="about__image"
+                width="500"
+                height="600"
+                loading="lazy"
+              />
+              <div class="about__image-accent" aria-hidden="true"></div>
+            </div>
+
+            <div class="about__body">
+              <h2 class="section-heading" id="about-heading">
+                Where logic meets<br />
+                <em>creative instinct</em>
+              </h2>
+
+              <p class="about__text">
+                I'm Suha — a developer who grew up drawing before learning to type,
+                which means I've always thought visually first and technically second.
+                That dual perspective shapes every project I take on: the code is
+                purposeful, and the design has intention behind every pixel.
+              </p>
+              <p class="about__text">
+                By day I build responsive, accessible web applications. By evening
+                I'm behind a camera or in front of a canvas, exploring the same
+                questions about form, light, and emotion — just with different tools.
+              </p>
+
+              <ul class="about__facts" role="list" aria-label="Quick facts">
+                <li class="about__fact">
+                  <span class="about__fact-label">Based in</span>
+                  <span class="about__fact-value">Bangladesh</span>
+                </li>
+                <li class="about__fact">
+                  <span class="about__fact-label">Focused on</span>
+                  <span class="about__fact-value">Web Dev &amp; Visual Arts</span>
+                </li>
+                <li class="about__fact">
+                  <span class="about__fact-label">Available for</span>
+                  <span class="about__fact-value">Freelance &amp; Collabs</span>
+                </li>
+              </ul>
+
+              <a href="#contact" class="btn btn--primary">Work With Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           SKILLS SECTION
+      ============================================================ -->
+      <section class="skills section section--alt" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">Skills</div>
+          <h2 class="section-heading section-heading--center" id="skills-heading">
+            Tools of the trade
+          </h2>
+          <p class="section-subheading">
+            Technologies I reach for every day, and disciplines I keep sharpening.
+          </p>
+
+          <div class="skills__categories">
+
+            <!-- Development -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Development</h3>
+              <ul class="skills__list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name">HTML &amp; CSS</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML and CSS proficiency 95%">
+                    <div class="skill-item__fill" style="--skill-pct: 95%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">JavaScript / TypeScript</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript and TypeScript proficiency 88%">
+                    <div class="skill-item__fill" style="--skill-pct: 88%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">React &amp; Next.js</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="React and Next.js proficiency 85%">
+                    <div class="skill-item__fill" style="--skill-pct: 85%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Node.js &amp; Express</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js and Express proficiency 78%">
+                    <div class="skill-item__fill" style="--skill-pct: 78%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Python</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency 72%">
+                    <div class="skill-item__fill" style="--skill-pct: 72%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Design & Art -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Design &amp; Art</h3>
+              <ul class="skills__list" role="list">
+                <li class="skill-item">
+                  <span class="skill-item__name">Figma &amp; UI/UX</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Figma and UI UX proficiency 90%">
+                    <div class="skill-item__fill" style="--skill-pct: 90%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Digital Illustration</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Digital Illustration proficiency 85%">
+                    <div class="skill-item__fill" style="--skill-pct: 85%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Photography</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Photography proficiency 82%">
+                    <div class="skill-item__fill" style="--skill-pct: 82%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Lightroom &amp; Photoshop</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Lightroom and Photoshop proficiency 80%">
+                    <div class="skill-item__fill" style="--skill-pct: 80%"></div>
+                  </div>
+                </li>
+                <li class="skill-item">
+                  <span class="skill-item__name">Watercolour Painting</span>
+                  <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Watercolour painting proficiency 75%">
+                    <div class="skill-item__fill" style="--skill-pct: 75%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tools & Workflow -->
+            <div class="skills__category">
+              <h3 class="skills__category-title">Tools &amp; Workflow</h3>
+              <ul class="skills__tag-list" role="list">
+                <li class="skill-tag">Git &amp; GitHub</li>
+                <li class="skill-tag">Docker</li>
+                <li class="skill-tag">PostgreSQL</li>
+                <li class="skill-tag">MongoDB</li>
+                <li class="skill-tag">Tailwind CSS</li>
+                <li class="skill-tag">GSAP</li>
+                <li class="skill-tag">Framer Motion</li>
+                <li class="skill-tag">Storybook</li>
+                <li class="skill-tag">Jest</li>
+                <li class="skill-tag">Vercel</li>
+                <li class="skill-tag">Linux / CLI</li>
+                <li class="skill-tag">Notion</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           PROJECTS SECTION
+      ============================================================ -->
+      <section class="projects section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">Projects</div>
+          <h2 class="section-heading section-heading--center" id="projects-heading">
+            Selected work
+          </h2>
+          <p class="section-subheading">
+            A mix of shipped products, experiments, and open-source contributions.
+          </p>
+
+          <!-- Filter tabs -->
+          <div class="projects__filters" role="tablist" aria-label="Filter projects by type">
+            <button class="filter-btn filter-btn--active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="web">Web</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="app">App</button>
+            <button class="filter-btn" role="tab" aria-selected="false" data-filter="design">Design</button>
+          </div>
+
+          <div class="projects__grid" role="list">
+
+            <!-- Project Card 1 -->
+            <article class="project-card" role="listitem" data-category="web" aria-labelledby="proj1-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/1a1a2e/c8b8a2?text=Lumina+UI"
+                  alt="Screenshot of Lumina UI component library"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">TypeScript</span>
+                  <span class="project-tag">Storybook</span>
+                </div>
+                <h3 class="project-card__title" id="proj1-title">Lumina UI</h3>
+                <p class="project-card__description">
+                  An accessible, themeable component library built for design systems that need
+                  flexibility without sacrificing consistency. Ships with 40+ components and
+                  full dark-mode support.
+                </p>
+                <div class="project-card__actions">
+                  <a
+                    href="#"
+                    class="btn btn--sm btn--primary"
+                    aria-label="Live demo of Lumina UI"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >Live Demo</a>
+                  <a
+                    href="#"
+                    class="btn btn--sm btn--outline"
+                    aria-label="GitHub repository of Lumina UI"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project-card" role="listitem" data-category="app" aria-labelledby="proj2-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/2d2d44/e8e4d9?text=Verdant+App"
+                  alt="Screenshot of Verdant plant-care app"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Prisma</span>
+                  <span class="project-tag">PostgreSQL</span>
+                </div>
+                <h3 class="project-card__title" id="proj2-title">Verdant</h3>
+                <p class="project-card__description">
+                  A plant-care companion app with watering schedules, growth logs, and
+                  community plant-swapping. Over 3,000 active users since launch.
+                </p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--sm btn--primary" aria-label="Live demo of Verdant" rel="noopener noreferrer" target="_blank">Live Demo</a>
+                  <a href="#" class="btn btn--sm btn--outline" aria-label="GitHub repository of Verdant" rel="noopener noreferrer" target="_blank">
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="project-card" role="listitem" data-category="design" aria-labelledby="proj3-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/3d2a4a/c8b8a2?text=Ether+Brand"
+                  alt="Screenshot of Ether branding project"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">Figma</span>
+                  <span class="project-tag">Brand Identity</span>
+                  <span class="project-tag">Motion</span>
+                </div>
+                <h3 class="project-card__title" id="proj3-title">Ether Brand System</h3>
+                <p class="project-card__description">
+                  Complete visual identity for a mindfulness startup — logo, colour system,
+                  motion guidelines, and a Figma component library delivered to the dev team.
+                </p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--sm btn--primary" aria-label="Live demo of Ether Brand System" rel="noopener noreferrer" target="_blank">Live Demo</a>
+                  <a href="#" class="btn btn--sm btn--outline" aria-label="GitHub repository of Ether Brand System" rel="noopener noreferrer" target="_blank">
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 4 -->
+            <article class="project-card" role="listitem" data-category="web" aria-labelledby="proj4-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/1f2d3d/e8e4d9?text=Chronicle+CMS"
+                  alt="Screenshot of Chronicle headless CMS dashboard"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">Node.js</span>
+                  <span class="project-tag">MongoDB</span>
+                  <span class="project-tag">REST API</span>
+                </div>
+                <h3 class="project-card__title" id="proj4-title">Chronicle CMS</h3>
+                <p class="project-card__description">
+                  A lightweight headless CMS built for independent publishers who need
+                  Markdown-first editing, media management, and a clean REST API without
+                  the complexity of enterprise platforms.
+                </p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--sm btn--primary" aria-label="Live demo of Chronicle CMS" rel="noopener noreferrer" target="_blank">Live Demo</a>
+                  <a href="#" class="btn btn--sm btn--outline" aria-label="GitHub repository of Chronicle CMS" rel="noopener noreferrer" target="_blank">
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 5 -->
+            <article class="project-card" role="listitem" data-category="app" aria-labelledby="proj5-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/2a3d2d/e8e4d9?text=Drift+Finance"
+                  alt="Screenshot of Drift personal finance tracker"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">React</span>
+                  <span class="project-tag">Chart.js</span>
+                  <span class="project-tag">Firebase</span>
+                </div>
+                <h3 class="project-card__title" id="proj5-title">Drift Finance</h3>
+                <p class="project-card__description">
+                  A calm, minimal personal finance tracker that visualises spending patterns
+                  without judgment. Designed to reduce financial anxiety, not add to it.
+                </p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--sm btn--primary" aria-label="Live demo of Drift Finance" rel="noopener noreferrer" target="_blank">Live Demo</a>
+                  <a href="#" class="btn btn--sm btn--outline" aria-label="GitHub repository of Drift Finance" rel="noopener noreferrer" target="_blank">
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 6 -->
+            <article class="project-card" role="listitem" data-category="design" aria-labelledby="proj6-title">
+              <div class="project-card__image-wrap">
+                <img
+                  src="https://placehold.co/600x380/3d1f1f/e8d9d9?text=Ember+Portfolio"
+                  alt="Screenshot of Ember portfolio theme"
+                  class="project-card__image"
+                  width="600"
+                  height="380"
+                  loading="lazy"
+                />
+                <div class="project-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags" aria-label="Technologies used">
+                  <span class="project-tag">HTML/CSS</span>
+                  <span class="project-tag">GSAP</span>
+                  <span class="project-tag">Open Source</span>
+                </div>
+                <h3 class="project-card__title" id="proj6-title">Ember Portfolio Theme</h3>
+                <p class="project-card__description">
+                  A free, open-source portfolio theme for creatives. One config file,
+                  zero build tools. 500+ GitHub stars and featured in a CSS Weekly
+                  newsletter.
+                </p>
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--sm btn--primary" aria-label="Live demo of Ember Portfolio Theme" rel="noopener noreferrer" target="_blank">Live Demo</a>
+                  <a href="#" class="btn btn--sm btn--outline" aria-label="GitHub repository of Ember Portfolio Theme" rel="noopener noreferrer" target="_blank">
+                    <svg class="btn__icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /.projects__grid -->
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           ART & PHOTOGRAPHY GALLERY SECTION
+      ============================================================ -->
+      <section class="gallery section section--alt" id="gallery" aria-labelledby="gallery-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">Gallery</div>
+          <h2 class="section-heading section-heading--center" id="gallery-heading">
+            Art &amp; Photography
+          </h2>
+          <p class="section-subheading">
+            Work made outside the IDE — watercolour, digital illustration, and street photography.
+          </p>
+
+          <div class="gallery__grid" role="list" aria-label="Art and photography gallery">
+
+            <figure class="gallery__item gallery__item--wide" role="listitem">
+              <img
+                src="https://placehold.co/800x500/1a1a2e/c8b8a2?text=River+Delta+%E2%80%94+Watercolour"
+                alt="Watercolour painting of the river delta at dusk, warm ochres bleeding into deep violet"
+                class="gallery__image"
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">River Delta — Watercolour, 2024</figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="https://placehold.co/500x500/2d2d44/e8e4d9?text=Old+Town+%E2%80%94+Photo"
+                alt="Black and white photograph of a narrow alley in old Dhaka, a child mid-run in the distance"
+                class="gallery__image"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Old Town — Photography, 2024</figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="https://placehold.co/500x500/3d2a4a/e8d9f0?text=Bloom+%E2%80%94+Digital"
+                alt="Digital illustration of a magnolia bloom dissolving into geometric fragments"
+                class="gallery__image"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Bloom — Digital Illustration, 2023</figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="https://placehold.co/500x500/1f2d3d/b8cce8?text=Monsoon+%E2%80%94+Photo"
+                alt="Photograph of a monsoon street scene, reflections of neon signs in pooled rainwater"
+                class="gallery__image"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Monsoon — Photography, 2023</figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--tall" role="listitem">
+              <img
+                src="https://placehold.co/500x700/2a3d2d/b8e8c0?text=Overgrown+%E2%80%94+Watercolour"
+                alt="Tall watercolour painting of an overgrown doorway, vines consuming old brickwork"
+                class="gallery__image"
+                width="500"
+                height="700"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Overgrown — Watercolour, 2023</figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="https://placehold.co/500x500/3d1f1f/e8b8b8?text=Chai+%E2%80%94+Photo"
+                alt="Close-up photograph of clay chai cups on a wooden tray, steam rising"
+                class="gallery__image"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Chai — Photography, 2024</figcaption>
+            </figure>
+
+            <figure class="gallery__item" role="listitem">
+              <img
+                src="https://placehold.co/500x500/1a2d3d/b8d9e8?text=Tide+%E2%80%94+Digital"
+                alt="Digital illustration of tidal patterns viewed from above, deep blues and teals"
+                class="gallery__image"
+                width="500"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Tide — Digital Illustration, 2024</figcaption>
+            </figure>
+
+            <figure class="gallery__item gallery__item--wide" role="listitem">
+              <img
+                src="https://placehold.co/800x500/2d1a2d/e8b8e8?text=Dusk+Market+%E2%80%94+Watercolour"
+                alt="Panoramic watercolour of a dusk market scene, figures silhouetted against golden light"
+                class="gallery__image"
+                width="800"
+                height="500"
+                loading="lazy"
+              />
+              <figcaption class="gallery__caption">Dusk Market — Watercolour, 2024</figcaption>
+            </figure>
+
+          </div><!-- /.gallery__grid -->
+
+          <div class="gallery__cta">
+            <a href="#contact" class="btn btn--outline">Commission a Piece</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           JOURNEY TIMELINE SECTION
+      ============================================================ -->
+      <section class="journey section" id="journey" aria-labelledby="journey-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">Journey</div>
+          <h2 class="section-heading section-heading--center" id="journey-heading">
+            How I got here
+          </h2>
+
+          <ol class="timeline" aria-label="Career and education timeline">
+
+            <li class="timeline__item timeline__item--left">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2018">2018</time>
+                <h3 class="timeline__title">Started painting seriously</h3>
+                <p class="timeline__desc">
+                  Enrolled in a local art programme and began exhibiting watercolours
+                  in small gallery shows. Art taught me to see before I learned to build.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--right">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2019">2019</time>
+                <h3 class="timeline__title">First line of code</h3>
+                <p class="timeline__desc">
+                  Built a personal blog in raw HTML and CSS to showcase artwork.
+                  That one site sent me down a rabbit hole I haven't climbed out of.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--left">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2020">2020</time>
+                <h3 class="timeline__title">CS degree begins</h3>
+                <p class="timeline__desc">
+                  Started a Bachelor's in Computer Science. Worked as a freelance
+                  web designer simultaneously, funding studies with design contracts.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--right">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2021">2021</time>
+                <h3 class="timeline__title">First internship</h3>
+                <p class="timeline__desc">
+                  Junior front-end intern at a Dhaka-based product studio. Shipped
+                  features used by 50k+ users in my first three months.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--left">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2022">2022</time>
+                <h3 class="timeline__title">Photography takes hold</h3>
+                <p class="timeline__desc">
+                  Bought a second-hand mirrorless camera. Street photography became a
+                  weekly practice — learning to slow down and notice is still my best
+                  programming lesson.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--right">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <time class="timeline__date" datetime="2023">2023</time>
+                <h3 class="timeline__title">Graduated &amp; went full-stack</h3>
+                <p class="timeline__desc">
+                  Graduated with distinction. Joined a remote startup as a full-stack
+                  engineer and shipped Chronicle CMS, which went open-source.
+                </p>
+              </div>
+            </li>
+
+            <li class="timeline__item timeline__item--left">
+              <div class="timeline__marker timeline__marker--current" aria-label="Current" aria-hidden="true"></div>
+              <div class="timeline__card timeline__card--current">
+                <time class="timeline__date" datetime="2024">2024 — Now</time>
+                <h3 class="timeline__title">Code &amp; Canvas, independent</h3>
+                <p class="timeline__desc">
+                  Running my own practice — client work in the week, personal art at
+                  the weekend. Looking for collaborators who care about both craft and impact.
+                </p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           STATISTICS SECTION
+      ============================================================ -->
+      <section class="stats section section--dark" id="stats" aria-labelledby="stats-heading">
+        <div class="container">
+          <h2 class="sr-only" id="stats-heading">By the numbers</h2>
+
+          <ul class="stats__grid" role="list" aria-label="Portfolio statistics">
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="6" aria-label="6 years of experience">6</span>
+              <span class="stat-card__unit">+</span>
+              <p class="stat-card__label">Years building for the web</p>
+            </li>
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="42" aria-label="42 projects shipped">42</span>
+              <span class="stat-card__unit"></span>
+              <p class="stat-card__label">Projects shipped</p>
+            </li>
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="18" aria-label="18 clients worked with">18</span>
+              <span class="stat-card__unit">+</span>
+              <p class="stat-card__label">Clients worked with</p>
+            </li>
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="500" aria-label="500 plus GitHub stars">500</span>
+              <span class="stat-card__unit">+</span>
+              <p class="stat-card__label">GitHub stars</p>
+            </li>
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="120" aria-label="120 original artworks">120</span>
+              <span class="stat-card__unit">+</span>
+              <p class="stat-card__label">Original artworks created</p>
+            </li>
+
+            <li class="stat-card">
+              <span class="stat-card__number" data-count="3" aria-label="3 gallery exhibitions">3</span>
+              <span class="stat-card__unit"></span>
+              <p class="stat-card__label">Gallery exhibitions</p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+           CONTACT FORM SECTION
+      ============================================================ -->
+      <section class="contact section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="section-label" aria-hidden="true">Contact</div>
+          <h2 class="section-heading section-heading--center" id="contact-heading">
+            Let's make something together
+          </h2>
+          <p class="section-subheading">
+            Open for freelance work, collaborations, and interesting conversations.
+            Response time is usually within 24 hours.
+          </p>
+
+          <div class="contact__grid">
+
+            <!-- Contact Info -->
+            <aside class="contact__info" aria-label="Contact information">
+
+              <div class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact__info-label">Email</p>
+                  <a href="mailto:hello@codeandcanvas.dev" class="contact__info-value">hello@codeandcanvas.dev</a>
+                </div>
+              </div>
+
+              <div class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact__info-label">Location</p>
+                  <p class="contact__info-value">Bangladesh (remote-friendly)</p>
+                </div>
+              </div>
+
+              <div class="contact__info-item">
+                <div class="contact__info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="contact__info-label">Availability</p>
+                  <p class="contact__info-value">Open to new projects</p>
+                </div>
+              </div>
+
+              <!-- Social links -->
+              <nav class="contact__social" aria-label="Social media links">
+                <a href="#" class="contact__social-link" aria-label="GitHub profile" rel="noopener noreferrer" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="LinkedIn profile" rel="noopener noreferrer" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Instagram profile" rel="noopener noreferrer" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Dribbble profile" rel="noopener noreferrer" target="_blank">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+                </a>
+              </nav>
+
+            </aside>
+
+            <!-- Contact Form -->
+            <div class="contact__form-wrap">
+              <form
+                class="contact-form"
+                id="contact-form"
+                novalidate
+                aria-label="Send a message to Suha"
+              >
+                <div class="form-row form-row--half">
+                  <div class="form-group">
+                    <label class="form-label" for="contact-name">
+                      Your name <span class="form-required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      class="form-input"
+                      placeholder="Ada Lovelace"
+                      required
+                      autocomplete="name"
+                      aria-required="true"
+                      aria-describedby="name-error"
+                    />
+                    <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="contact-email">
+                      Email address <span class="form-required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      class="form-input"
+                      placeholder="ada@example.com"
+                      required
+                      autocomplete="email"
+                      aria-required="true"
+                      aria-describedby="email-error"
+                    />
+                    <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">
+                    Subject <span class="form-required" aria-hidden="true">*</span>
+                  </label>
+                  <select
+                    id="contact-subject"
+                    name="subject"
+                    class="form-input form-select"
+                    required
+                    aria-required="true"
+                    aria-describedby="subject-error"
+                  >
+                    <option value="" disabled selected>What are you reaching out about?</option>
+                    <option value="web-project">Web development project</option>
+                    <option value="design-project">Design / branding project</option>
+                    <option value="commission">Art commission</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="other">Something else</option>
+                  </select>
+                  <span class="form-error" id="subject-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-budget">
+                    Estimated budget
+                  </label>
+                  <select
+                    id="contact-budget"
+                    name="budget"
+                    class="form-input form-select"
+                  >
+                    <option value="" disabled selected>Select a range (optional)</option>
+                    <option value="under-500">Under $500</option>
+                    <option value="500-2000">$500 – $2,000</option>
+                    <option value="2000-5000">$2,000 – $5,000</option>
+                    <option value="5000-plus">$5,000+</option>
+                    <option value="discuss">Let's discuss</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">
+                    Message <span class="form-required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-input form-textarea"
+                    placeholder="Tell me about your project, idea, or question…"
+                    rows="5"
+                    required
+                    aria-required="true"
+                    aria-describedby="message-error"
+                  ></textarea>
+                  <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group form-group--checkbox">
+                  <label class="form-checkbox-label">
+                    <input
+                      type="checkbox"
+                      id="contact-consent"
+                      name="consent"
+                      class="form-checkbox"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form-checkbox-text">
+                      I agree to my details being stored to process this enquiry.
+                    </span>
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn--primary btn--full"
+                  id="contact-submit"
+                  aria-label="Send your message"
+                >
+                  Send Message
+                  <svg class="btn__arrow" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                    <line x1="3" y1="10" x2="17" y2="10"/>
+                    <polyline points="12 4 18 10 12 16"/>
+                  </svg>
+                </button>
+
+                <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
+                  <p>Message sent — I'll be in touch soon!</p>
+                </div>
+
+              </form>
+            </div>
+
+          </div><!-- /.contact__grid -->
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo" aria-label="Code and Canvas — back to top">
+              Code <span class="footer__logo-amp">&amp;</span> Canvas
+            </a>
+            <p class="footer__tagline">
+              Crafting interfaces and making marks — somewhere between the terminal and the sketchbook.
+            </p>
+          </div>
+
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <h3 class="footer__nav-title">Navigate</h3>
+            <ul role="list">
+              <li><a href="#about" class="footer__link">About</a></li>
+              <li><a href="#skills" class="footer__link">Skills</a></li>
+              <li><a href="#projects" class="footer__link">Projects</a></li>
+              <li><a href="#gallery" class="footer__link">Gallery</a></li>
+              <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer__contact">
+            <h3 class="footer__nav-title">Say hello</h3>
+            <a href="mailto:hello@codeandcanvas.dev" class="footer__email">
+              hello@codeandcanvas.dev
+            </a>
+            <nav class="footer__social" aria-label="Social media">
+              <a href="#" class="footer__social-link" aria-label="GitHub" rel="noopener noreferrer" target="_blank">GH</a>
+              <a href="#" class="footer__social-link" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">LI</a>
+              <a href="#" class="footer__social-link" aria-label="Instagram" rel="noopener noreferrer" target="_blank">IG</a>
+              <a href="#" class="footer__social-link" aria-label="Dribbble" rel="noopener noreferrer" target="_blank">DB</a>
+            </nav>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            &copy; <time id="footer-year" datetime="2024">2024</time> Suha. All rights reserved.
+          </p>
+          <a href="#hero" class="footer__back-top" aria-label="Back to top of page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+              <polyline points="18 15 12 9 6 15"/>
+            </svg>
+            Back to top
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
